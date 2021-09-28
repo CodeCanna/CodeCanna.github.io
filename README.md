@@ -1,2 +1,7 @@
-# CodeCanna.github.io
-Just some fun.
+# Mark Allen Waid Jr
+
+## Introduction
+
+## Current Projects
+
+## Links
