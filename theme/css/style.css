@@ -51,6 +51,11 @@ ol {
 	line-height: 1.6em;
 }
 
+img {
+	width: 20rem;
+	height: auto;
+}
+
 /* *** Layout *** */
 
 #container { 
