@@ -116,11 +116,13 @@
 <p>The CISA released a <a href="https://www.cisa.gov/resources-tools/resources/product-security-bad-practices">report</a> along with the FBI on October 16, 2024 outlining certain points in the <a href="https://www.cisa.gov/securebydesign">Secure by Design</a> outline.  Secure by Design is a set of guidelines for designing software with security at it's core, instead of more of a secondary thought or "feature".  In this standard security in software it looked at as a core concern rather than a feature to be advertised.</p>
 <p>This might seem like an obvious concept to have security be a core concept of any software, but it is very time consuming and difficult to write secure, and safe software.  Not all software developers put security over pushing features to their software.  This is never a good idea, but people do it regardless.  There are many ways that software can become compromised.  Most of these are human error caused poor coding practices, and lazy development.  It's easy to accidentally store sensitive data as plain strings instead of encrypting it, or improperly managing memory and exposing data through memory leaks.</p>
 <p>By being selective in the technologies used when creating software one care create software that is secured from the ground up.</p>
-<p>Some things to consider when creating software:
-* What programming language will the software be written in?
-* Who will use the software?
-* What will the software do or be responsible for?
-* What sort of data is the program working with? I.E. is it sensitive user data?</p>
+<p>Some things to consider when creating software:</p>
+<ul>
+<li>What programming language will the software be written in?</li>
+<li>Who will use the software?</li>
+<li>What will the software do or be responsible for?</li>
+<li>What sort of data is the program working with? I.E. is it sensitive user data?</li>
+</ul>
 <p>Now it's important to understand that one of the most important and difficult things to decide when creating software is the programming language.  You have to think long and hard about what you program will be doing and where it will be used.  Is it an embedded system?  Or is it a cloud service?  For example a web developer doesn't really need to worry about memory safety because the languages they use don't deal directly with computer memory.  However when writing something like an embedded program or an operating system you will probably be using something like C or C++.  C has been around since the 70s and C++ almost as long.  There were no "memory safe" languages back then, as this is a relatively new concept.</p>
 <h4>What is memory safety?</h4>
 <p>When you write a computer program you might tell the computer programmatically that you want to store the number 5 numbers in an array or list, now in C you can access each number in this list, but what if I gave you a grocery list with 5 items on it, you get the five items, and I look for six items.  You would be confused, well in C the computer isn't smart enough to be confused and just gives you whatever it's got stored where the alleged 6th item on the grocery list would be.  Remember that the memory is shared by other programs, and if a program stored sensitive data at that address then the computer would "leak" this data to you.  This is what's called a data leak, and it's one of many pitfalls with coding in C and other older languages that deal directly with memory. When speaking of a memory safe language we are speaking of a language that by design avoid most or all of these pitfalls.</p>
