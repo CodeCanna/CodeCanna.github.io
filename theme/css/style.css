@@ -52,8 +52,8 @@ ol {
 }
 
 img {
-	width: 20rem;
-	height: auto;
+	max-width: 25rem;
+	max-height: auto;
 }
 
 /* *** Layout *** */

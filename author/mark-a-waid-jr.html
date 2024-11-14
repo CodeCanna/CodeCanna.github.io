@@ -5,9 +5,9 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   
-  <title>My two Beans - Articles by Mark A Waid Jr</title>
+  <title>My Two Beans - Articles by Mark A Waid Jr</title>
 <link href="https://codecanna.github.io/theme/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-<link href="https://codecanna.github.io/" type="application/atom+xml" rel="alternate" title="My two Beans ATOM Feed" />
+<link href="https://codecanna.github.io/" type="application/atom+xml" rel="alternate" title="My Two Beans ATOM Feed" />
   
   <!--[if IE]>
   <style type="text/css"> 
@@ -22,7 +22,7 @@
 <div id="container">
 
   <div id="header">
-  <h1><a href="https://codecanna.github.io/index.html">My two Beans</h1>
+  <h1><a href="https://codecanna.github.io/index.html">My Two Beans</h1>
   
   </div><!-- end #header -->
   
@@ -51,26 +51,34 @@
 		     <li ><a href="https://codecanna.github.io/category/general.html">General</a></li>
 		     <li ><a href="https://codecanna.github.io/category/information-technology.html">Information Technology</a></li>
 		     <li ><a href="https://codecanna.github.io/category/philosophy.html">Philosophy</a></li>
+		     <li ><a href="https://codecanna.github.io/category/programming.html">Programming</a></li>
 		     <li ><a href="https://codecanna.github.io/category/redoxos.html">RedoxOS</a></li>
 	    </ul>
 	</li>
 	<li>
 		<h3>Blogroll</h3>
 		<ul>
-                    <li><a href="https://github.com/CodeCanna">My GitHub</a></li>
-                    <li><a href="https://github.com/CodeCanna/spacepix">My Current Project</a></li>
+                    <li><a href="https://www.uiua.org/">Uiua Programming Language</a></li>
+                    <li><a href="https://rust-lang.org">Rust Programming Language</a></li>
+                    <li><a href="https://quantum.ibm.com/">Quantum Computing</a></li>
+                    <li><a href="https://redox-os.org/">Redox OS</a></li>
+                    <li><a href="https://rust-lang.org">Rust Programming Language</a></li>
 		</ul>
 	</li>
         <li>
                 <h3>Social</h3>
                 <ul>
+                    <li><a href="https://github.com/codecanna">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/markie.waid">Facebook</a></li>
                     <li><a href="https://www.instagram.com/codecanna/">Instagram</a></li>
-                    <li><a href="https://www.youtube.com/channel/UCvEcG-_JFPkcLmI6ltu_MtA">My YouTube Channel</a></li>
                 </ul>
         </li><!-- /.social -->
         <li>
             <h3>Tags</h3>
             <ul>
+                    <li><a href="https://codecanna.github.io/tag/rust.html">rust</a></li>
+                    <li><a href="https://codecanna.github.io/tag/programming.html">programming</a></li>
+                    <li><a href="https://codecanna.github.io/tag/language.html">language</a></li>
                     <li><a href="https://codecanna.github.io/tag/technology.html">technology</a></li>
                     <li><a href="https://codecanna.github.io/tag/computer-programming.html">computer programming</a></li>
                     <li><a href="https://codecanna.github.io/tag/cisa.html">CISA</a></li>
@@ -83,7 +91,6 @@
                     <li><a href="https://codecanna.github.io/tag/operating-system.html">operating system</a></li>
                     <li><a href="https://codecanna.github.io/tag/microkernel.html">microkernel</a></li>
                     <li><a href="https://codecanna.github.io/tag/redox.html">redox</a></li>
-                    <li><a href="https://codecanna.github.io/tag/rust.html">rust</a></li>
                     <li><a href="https://codecanna.github.io/tag/ai.html">ai</a></li>
                     <li><a href="https://codecanna.github.io/tag/bio.html">bio</a></li>
                     <li><a href="https://codecanna.github.io/tag/computing.html">computing</a></li>
@@ -107,65 +114,37 @@
   	
     <div class="blogItem">
     
-      <h2><a href="https://codecanna.github.io/a-new-era.html">A new Era in Programming</a></h2>
-      <h3>Sat 09 November 2024</h3>
+      <h2><a href="https://codecanna.github.io/errors-errors.html">Errors Errors Everywhere!!</a></h2>
+      <h3>Sun 10 November 2024</h3>
       
-      <h1>CISA &amp; Secure by Design</h1>
-<p><img alt="CISA Logo" src="https://media.datacenterdynamics.com/media/images/cisaDHS.2e16d0ba.fill-1200x630.jpg"></p>
-<p>The CISA released a <a href="https://www.cisa.gov/resources-tools/resources/product-security-bad-practices">report</a> along with the FBI on October 16, 2024 outlining certain points in the <a href="https://www.cisa.gov/securebydesign">Secure by Design</a> outline.  Secure by Design is a set of guidelines for designing software with security at it's core, instead of more of a secondary thought or "feature".  In this standard security in software it looked at as a core concern rather than a feature to be advertised.</p>
-<p>This might seem like an obvious concept to have security be a core concept of any software, but it is very time consuming and difficult to write secure, and safe software.  Not all software developers put security over pushing features to their software.  This is never a good idea, but people do it regardless.  There are many ways that software can become compromised.  Most of these are human error caused poor coding practices, and lazy development.  It's easy to accidentally store sensitive data as plain strings instead of encrypting it, or improperly managing memory and exposing data through memory leaks.</p>
-<p>By being selective in the technologies used when creating software one care create software that is secured from the ground up.</p>
-<p>Some things to consider when creating software:</p>
-<ul>
-<li>What programming language will the software be written in?</li>
-<li>Who will use the software?</li>
-<li>What will the software do or be responsible for?</li>
-<li>What sort of data is the program working with? I.E. is it sensitive user data?</li>
-</ul>
-<p>Now it's important to understand that one of the most important and difficult things to decide when creating software is the programming language.  You have to think long and hard about what you program will be doing and where it will be used.  Is it an embedded system?  Or is it a cloud service?  For example a web developer doesn't really need to worry about memory safety because the languages they use don't deal directly with computer memory.  However when writing something like an embedded program or an operating system you will probably be using something like C or C++.  C has been around since the 70s and C++ almost as long.  There were no "memory safe" languages back then, as this is a relatively new concept.</p>
-<h4>What is memory safety?</h4>
-<p>When you write a computer program you might tell the computer programmatically that you want to store the number 5 numbers in an array or list, now in C you can access each number in this list, but what if I gave you a grocery list with 5 items on it, you get the five items, and I look for six items.  You would be confused, well in C the computer isn't smart enough to be confused and just gives you whatever it's got stored where the alleged 6th item on the grocery list would be.  Remember that the memory is shared by other programs, and if a program stored sensitive data at that address then the computer would "leak" this data to you.  This is what's called a data leak, and it's one of many pitfalls with coding in C and other older languages that deal directly with memory. When speaking of a memory safe language we are speaking of a language that by design avoid most or all of these pitfalls.</p>
-<h4>Why is it such a big deal to stop using C/C++?</h4>
-<p>The <a href="https://en.wikipedia.org/wiki/C_(programming_language)">C</a> programming language has been around since the early 1970s which in computer terms is since ancient times, it was the turning point in computer programming in it's day when developers used languages that were less human readable and before that they forged their software in literal 0s and 1s.  In those times it was the job of the software developer to program proper and secure memory management into their program with little to no help from the computer.  Due to the age of C it's the foundation the entire world's software base, it's literally everywhere.  Re-writing all of our current software in memory-safe languages is unrealistic.  Its better to concentrate on securing the current software and writing any new software in a memory safe language.  Because of the issues with C CISA has encouraged software developers to stop using it.  This is a huge leap forward, and to some a terrifying change.</p>
-<h4>What are some memory safe programming languages?</h4>
-<p>So the CISA has declared that developers should stop using memory unsafe languages like C/C++ so what are the options?</p>
-<p>You might be happy to know that he list of memory safe languages is extensive, and the CISA gives a list of their website but here are a few:</p>
-<ul>
-<li><a href="https://www.rust-lang.org/">Rust</a></li>
-<li><a href="https://www.python.org/">Python</a></li>
-<li><a href="https://go.dev/">Go</a></li>
-<li><a href="https://www.java.com/en/">Java</a></li>
-<li><a href="https://dotnet.microsoft.com/en-us/languages/csharp">C#</a></li>
-<li><a href="https://www.swift.org/">Swift</a></li>
-</ul>
-<p>I myself am learning Rust, and I'm working on a program called <a href="https://github.com/CodeCanna/spacepix">Spacepix</a> and I'm writing it in Rust.  Because it's written in Rust, I don't have to worry about these pit falls.  There is a downside to all of this, and that is new developers won't know how to fix or avoid these issues if they ever come across them in their journey.</p>
-<h4>Two factor authentication</h4>
-<p><img alt="2FA" src="https://dev.mos.cms.futurecdn.net/sfHiqFodx97BHyKDAXhEKe.jpg"></p>
-<p><a href="https://en.m.wikipedia.org/wiki/Multi-factor_authentication">Two factor authentication</a> is another technology recommended that developers implement into the security plan of their software. It uses multiple means of identifying the user rather than just an email and password.  This can include a PIN, the use of a third party authentication software, or even a USB fingerprint scanner.  Like it or not most apps are going to multi or two factor authentication. </p>
-<h4>The part of open source software</h4>
-<p><img alt="OSS" src="https://miro.medium.com/v2/resize:fit:1200/1*44UXHdH0lxIvxWRvlMId-g.jpeg"></p>
-<p>In their report they say "Software manufacturers should responsibly consume and sustainably contribute to the open source software that they depend on." And I agree with this completely, its not the fault of open source software that it has known security issues that haven't been fixed when the project relies on volunteers and charity, if a company wants to use open source software but it doesn't conform to their needs they can contribute either financially or by contributing to it's codebase.  Valve's <a href="https://store.steampowered.com/steamdeck">Steam Deck</a> is a great example of this.  They could have very well put Windows their Steam Deck, but instead they saved money, and helped a wonderful open source project at the same time. By using <a href="https://archlinux.org/">Arch Linux</a> as the base for their OS they financially supported this project and avoided expensive service contracts with Microsoft. The most expensive endeavor has been their <a href="https://en.m.wikipedia.org/wiki/Proton_(software)">windows compatibility</a> layer that allows games designed to only run on windows run on Linux, and they very easily could have spent that money on a Windows service contract, but they contributed a MAJOR piece of software to the open source software community and cause.</p>
-<p>Anyway back to security, since Valve is using this open source OS valve must ensure that it's safe, and secure and it must contribute to fixed these issues before using the software in a project.</p>
-<h2>My Two Beans</h2>
-<p>🫘🫘
-Software companies have taken a laid back approach when it comes to security unless pressure is put on from the beginning to be secure. Security is often overlooked in favor of adding more features quicker, and that is a bad approach that can cost time, data, and money.  By going with a secured by design approach from the beginning its often easier to implement security into more parts of your software. It's up to the developer to make sure software is secure for the user, its not the responsibly of the user.  It takes time, and costs more money to develop software with security in mind, but it's a necessary expense when compared to the alternative. Thank you so much for reading, this was my two beans.</p>	
+      	
 
       
-      <h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/cyber-security.html">Cyber Security</a></h3>
-<h3 class="blogMeta">Tags: <span><a href="https://codecanna.github.io/tag/technology.html">technology</a> / </span>
-<span><a href="https://codecanna.github.io/tag/computer-programming.html">computer programming</a> / </span>
-<span><a href="https://codecanna.github.io/tag/cisa.html">CISA</a> / </span>
-<span><a href="https://codecanna.github.io/tag/it.html">IT</a> / </span>
-<span><a href="https://codecanna.github.io/tag/computers.html">computers</a> / </span>
-<span><a href="https://codecanna.github.io/tag/software.html">software</a> / </span>
-<span><a href="https://codecanna.github.io/tag/security.html">security</a> / </span>
-<span><a href="https://codecanna.github.io/tag/cyber-security.html">cyber security</a> / </span>
+      <h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/programming.html">Programming</a></h3>
+<h3 class="blogMeta">Tags: <span><a href="https://codecanna.github.io/tag/rust.html">rust</a> / </span>
+<span><a href="https://codecanna.github.io/tag/programming.html">programming</a> / </span>
+<span><a href="https://codecanna.github.io/tag/language.html">language</a> / </span>
 </h3>    
     </div><!-- end #blogItem -->
 	
         <div class="blogItem">
                 <h2>Other articles</h2>
         </div>
+        
+    
+    <div class="blogItem">
+    
+      <h2><a href="https://codecanna.github.io/a-new-era.html">A new Era in Programming</a></h2>
+      <h3>Sat 09 November 2024</h3>
+      
+      <p>CISA and FBI released statements condemning the use of memory unsafe languages, and lazy security practices.</p>	
+<h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/cyber-security.html">Cyber Security</a></h3>
+	<a href="https://codecanna.github.io/a-new-era.html">Continue reading …</a>
+      
+      
+	
+    
+    </div><!-- end #blogItem -->
         
     
     <div class="blogItem">
