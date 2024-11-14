@@ -51,7 +51,6 @@
 		     <li ><a href="https://codecanna.github.io/category/general.html">General</a></li>
 		     <li ><a href="https://codecanna.github.io/category/information-technology.html">Information Technology</a></li>
 		     <li ><a href="https://codecanna.github.io/category/philosophy.html">Philosophy</a></li>
-		     <li ><a href="https://codecanna.github.io/category/programming.html">Programming</a></li>
 		     <li ><a href="https://codecanna.github.io/category/redoxos.html">RedoxOS</a></li>
 	    </ul>
 	</li>
@@ -76,9 +75,6 @@
         <li>
             <h3>Tags</h3>
             <ul>
-                    <li><a href="https://codecanna.github.io/tag/rust.html">rust</a></li>
-                    <li><a href="https://codecanna.github.io/tag/programming.html">programming</a></li>
-                    <li><a href="https://codecanna.github.io/tag/language.html">language</a></li>
                     <li><a href="https://codecanna.github.io/tag/technology.html">technology</a></li>
                     <li><a href="https://codecanna.github.io/tag/computer-programming.html">computer programming</a></li>
                     <li><a href="https://codecanna.github.io/tag/cisa.html">CISA</a></li>
@@ -91,6 +87,7 @@
                     <li><a href="https://codecanna.github.io/tag/operating-system.html">operating system</a></li>
                     <li><a href="https://codecanna.github.io/tag/microkernel.html">microkernel</a></li>
                     <li><a href="https://codecanna.github.io/tag/redox.html">redox</a></li>
+                    <li><a href="https://codecanna.github.io/tag/rust.html">rust</a></li>
                     <li><a href="https://codecanna.github.io/tag/ai.html">ai</a></li>
                     <li><a href="https://codecanna.github.io/tag/bio.html">bio</a></li>
                     <li><a href="https://codecanna.github.io/tag/computing.html">computing</a></li>
@@ -114,36 +111,34 @@
   	
     <div class="blogItem">
     
-      <h2><a href="https://codecanna.github.io/errors-errors.html">Errors Errors Everywhere!!</a></h2>
-      <h3>Sun 10 November 2024</h3>
-      
-      	
-
-      
-      <h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/programming.html">Programming</a></h3>
-<h3 class="blogMeta">Tags: <span><a href="https://codecanna.github.io/tag/rust.html">rust</a> / </span>
-<span><a href="https://codecanna.github.io/tag/programming.html">programming</a> / </span>
-<span><a href="https://codecanna.github.io/tag/language.html">language</a> / </span>
-</h3>    
-    </div><!-- end #blogItem -->
-	
-        <div class="blogItem">
-                <h2>Other articles</h2>
-        </div>
-        
-    
-    <div class="blogItem">
-    
       <h2><a href="https://codecanna.github.io/redox-os.html">Redox OS</a></h2>
       <h3>Mon 04 November 2024</h3>
       
-      <p>Check out this new Unix-like OS written in Rust called Redos OS.</p>	
-<h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/redoxos.html">RedoxOS</a></h3>
-	<a href="https://codecanna.github.io/redox-os.html">Continue reading …</a>
+      <h1>Redox OS</h1>
+<p><img alt="Redox OS Logo" src="https://wikiwandv2-19431.kxcdn.com/_next/image?url=https:%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F5%2F57%2FRedox_logo_2015.svg%2F1500px-Redox_logo_2015.svg.png&amp;w=3840&amp;q=50"></p>
+<p>I thought it would be cool if I covered the development of <a href="https://redox-os.org/">Redox OS</a>.  This OS is in early development, and is up and coming.</p>
+<h2>Another Operating System?</h2>
+<p>You might ask yourself: Why do we need so many different operating systems?  That is a valid question, because operating systems are hard to get used to using, and complex to develop, so why  are there so many? The answer is simpler than we might think. I believe that answer is in the problem that operating system attempt to solve.</p>
+<p>An operating system in simple terms is a collection of software (rarely a single program) that runs on computer hardware. This software manages the computer's resources to accomplish the will of the user, the hard part comes when UI and security comes in.</p>
+<h3>UI</h3>
+<p>UI (User Interface) is what a user uses to physically interact with data displayed on the screen in a way that's pleasing to the eyes. A UI must be fast, intuitive, stable, and secure.  Because of this they can be difficult to develop.</p>
+<h3>Security</h3>
+<p><img alt="Cybersecurity Image" src="https://www.biia.com/wp-content/uploads/2013/08/iStock_000022579586Medium.jpg"></p>
+<p>Security in the context of operating systems usually refers to the way the operating system handles files, user input, network traffic, passwords, down to managing data stored in RAM while a program runs. Security is the most important aspect of an operating system, and is necessary for the developers of an operating system to get right before it is used in production. This is an ongoing process that usually spans the entire life of the OS. And we have only discussed operating systems in the context of individual users, that doesn't cover how they are used to run servers in what's called a "headless" configuration. In this mode the OS doesn't run a UI and only manages the computer resources to host a web site, cloud app, game, or some other software.</p>
+<h2>So what problems do Redox OS attempt to solve?  And how?</h2>
+<p>Redox OS is YAUOS (Yet Another Unix-like Operating System) but this one differs from Linux or FreeBSD by following a different paradigm. Redox is a <a href="https://en.wikipedia.org/wiki/Microkernel">microkernel</a> operating system, it minimizes the amount of software that runs and communicates directly with the hardware. This provides better security than traditional kernels because software that would usually run at a lower level can run at a higher level, this makes it safer. Redox has a funny new thing up it's sleeve though, we'll talk about that next.</p>
+<h3>Redos is written in Rust.  So what?</h3>
+<p><img alt="Rust Lang Image" src="https://sanet.pics/storage-6/1220/uGsov8AhfvJOSgSNlHmUMH57ZAdhVVuB.jpg"></p>
+<p>Redox is one of the first operating systems written in a language called <a href="https://www.rust-lang.org/">Rust</a>. Rust is a special programming language that guarantees certain things while using it that other languages can't. Rust has what's called <a href="https://en.wikipedia.org/wiki/Memory_safety">memory safety</a>. This protects the programmer from pitfalls of languages such as C and C++ that Linux and Windows are written in. This also improves security as a high percentage of vulnerabilites are the result of poor programming practices, and human error. So the idea is, if the programming language used to program the operating system is itself safe and secure, it will to a long way towards writing secure operating systems.</p>	
+
       
-      
-	
-    
+      <h3 class="blogMeta">By <a href="#">Mark A Waid Jr</a>, Category: <a href="https://codecanna.github.io/category/redoxos.html">RedoxOS</a></h3>
+<h3 class="blogMeta">Tags: <span><a href="https://codecanna.github.io/tag/os.html">os</a> / </span>
+<span><a href="https://codecanna.github.io/tag/operating-system.html">operating system</a> / </span>
+<span><a href="https://codecanna.github.io/tag/microkernel.html">microkernel</a> / </span>
+<span><a href="https://codecanna.github.io/tag/redox.html">redox</a> / </span>
+<span><a href="https://codecanna.github.io/tag/rust.html">rust</a> / </span>
+</h3>    
     </div><!-- end #blogItem -->
   
   </div><!-- end #mainContent -->
